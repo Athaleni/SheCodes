@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scentedcandles</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(to top, #ec7937 0%, #ac72d3 100%);
+      color: #fff;
+      width: 50%;
+      margin: 60px auto;
+      font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      color: #5a1512;
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0;
+      display: block;
+      font-weight: bold;
+    }
+    h2 {
+      margin: 0;
+      font-size: 25px;
+      line-height: 35px;
+      font-weight: 300;
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif;
+      display: block;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      opacity: 0.7;
+      text-align: center;
+      font-family: monospace;
+      display: block;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      border: 1px solid #7740aa;
+      background: #792b4f;
+      color: #d1c9c48f;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: opacity 150ms ease;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #e21855;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+    button:hover {
+      background: rgb(114, 68, 68);
+      color: #1a64d6;
+      border: 1px solid #1a64d6;
+    }
+    .contact-details {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .contact-platform {
+      color: #885df1;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>
+      <br />
+      Scented candles
+    </h1>
+    <h2>Let's <strong>make</strong> some!!!</h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/330/original/81z-g9rGkWL._AC_UF894_1000_QL80_.jpg?1712514785"
+      alt="boho scented candle"
+      width="300"
+    />
+    <hr />
+    <br />
+    <p>
+      <strong>Scented candles</strong> have been used for centuries for their
+      pleasant fragrances, but did you know that they can also provide a range
+      of mental health benefits? While it may be surprising, scented candles
+      have been shown to improve mood, <em>reduce stress</em> and
+      <em>anxiety</em>, promote relaxation, and even <em>improve sleep.</em>
+    </p>
+    <p>
+      <small>
+        <a
+          href="https://timesofindia.indiatimes.com/life-style/home-garden/scented-candles-have-mental-health-benefits-read-on/articleshow/98863043.cms#:~:text=Scented%20candles%20have%20been%20used,relaxation%2C%20and%20even%20improve%20sleep."
+          target="_blank"
+        >
+          Learn more here
+        </a>
+      </small>
+    </p>
+    <button>BUY SOME!!!</button>
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert(
+            "Awesome!, " +
+              name +
+              " , we'll reach out. take these scented candles!"
+          );
+        } else {
+          alert("No name, no candles for you!");
+
+          let applyButton = document.querySelector("button");
+          applyButton.addEventListener("click", apply);
+        }
+      });
+    </script>
+    <div class="contact-details">
+      <span class="contact-platform">Email:</span>
+      bohocandles12@gmail.com
+      <br />
+      <span class="contact-platform"> Instagram:</span> @bohocandles.io
+    </div>
+  </body>
+</html>
