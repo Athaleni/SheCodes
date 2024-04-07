@@ -118,6 +118,14 @@
       </small>
     </p>
     <button>BUY SOME!!!</button>
+
+    <div class="contact-details">
+      <span class="contact-platform">Email:</span>
+      bohocandles12@gmail.com
+      <br />
+      <span class="contact-platform"> Instagram:</span> @bohocandles.io
+    </div>
+
     <script>
       document.querySelector(".btn").addEventListener("click", function () {
         let name = prompt("What is your name?");
@@ -125,21 +133,12 @@
           alert(
             "Awesome!, " +
               name +
-              " , we'll reach out. take these scented candles!"
+              " , we will reach out. Take some scented candles!"
           );
         } else {
           alert("No name, no candles for you!");
-
-          let applyButton = document.querySelector("button");
-          applyButton.addEventListener("click", apply);
         }
       });
     </script>
-    <div class="contact-details">
-      <span class="contact-platform">Email:</span>
-      bohocandles12@gmail.com
-      <br />
-      <span class="contact-platform"> Instagram:</span> @bohocandles.io
-    </div>
   </body>
 </html>
