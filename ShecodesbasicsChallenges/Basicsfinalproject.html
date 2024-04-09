@@ -125,20 +125,22 @@
       <br />
       <span class="contact-platform"> Instagram:</span> @bohocandles.io
     </div>
-
     <script>
-      document.querySelector(".btn").addEventListener("click", function () {
+      function changeName() {
         let name = prompt("What is your name?");
         if (name.length) {
           alert(
             "Awesome!, " +
               name +
-              " , we will reach out. Take some scented candles!"
+              " , we shall reach out. Here, have some scented candles!"
           );
         } else {
-          alert("No name, no candles for you!");
+          alert("Oops!! No name, no scented candles for you!");
         }
-      });
+      }
+
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", changeName);
     </script>
   </body>
 </html>
